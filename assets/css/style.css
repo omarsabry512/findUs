@@ -1,0 +1,397 @@
+/************************ general styles **********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 ,h2 ,h3 , h4 , h5 , h6 ,a , p{
+	color: #15354B;
+}
+
+img{
+    max-width: 100%;
+}
+.navbar-toggler{
+    background-color: #ef7f65;
+    border: 1px solid #ef7f65;
+}
+
+.websiteNav{
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navItems li a {
+    font-size: 18px;
+}
+.navItems li a:hover {
+    transform: scale(1.2);
+}
+.navItems li {
+    margin: 0 15px;
+}
+.navItems li button {
+    background: #EF7F65;
+    color: #fff;
+    border-radius: 31px;
+    padding: 5px 20px;
+    border:1px solid #EF7F65;
+}
+.navItems li button:hover{
+	background: #fff;
+	color: #EF7F65;
+	border:1px solid #EF7F65;
+}
+/********************************************* main section ****************************/
+.mainSection {
+    margin: 75px 0;
+}
+.introSection , footer{
+	min-height: 360px;
+	background:url('../img/bg.png');
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.introSection h1 {
+    margin-bottom: 30px;
+}
+.introSection p {
+    font-size: 20px;
+}
+.introSection button {
+	background: transparent;
+    padding: 15px 55px;
+    border: 1px solid #506270;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+.introSection button:hover{
+	background: #506270;
+	border: 1px solid #506270;
+	color: #fff;
+}
+.introSection img{
+	max-height:500px;
+
+}
+
+/*********************************** core features *****************************/
+.coreFeatures {
+    padding: 100px 0;
+    background: #EFF8FF;
+    display: flex;
+    position: relative;
+}
+.divBg {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    position: relative;
+}
+.oragned{
+	background: #EF7F65;
+}
+.green {
+	background: #B1EA8C;
+}
+.yellow {
+	background: #FFE35A;
+}
+
+.square {
+    width: 92px;
+    height: 92px;
+    border: 2px solid #3B5C91;
+    border-radius: 15px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square-sm{
+	border:3px solid #15354B;
+	width: 20px;
+    height: 35px;
+}
+
+.labelFeature {
+    width: 76px;
+    height: 280px;
+    position: absolute;
+    left: 12%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 25px solid transparent;
+    border-left: 50px solid #80e0dd;
+    border-right: 50px solid #80e0dd;
+}
+.labelFeature span {
+	transform: rotate(270deg);
+    display: block;
+    font-size: 28px;
+    color: #fff;
+    white-space: nowrap;
+}
+.labelFeature:before {
+    content: '';
+    width: 100px;
+    height: 40px;
+    background: #80e0dd;
+    position: absolute;
+    top: -40px;
+}
+.labelFeature:after {
+    content: '';
+    width: 50px;
+    height: 40px;
+    background: #63C5C2;
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+
+/**************************** section create account ***************************/
+.createAccount .container .row {
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.formGroup{
+    display: flex;
+    align-items: center;
+}
+.formGroup input {
+    background-color: #ECFBFA;
+    color: #80E0DD;
+    padding: 10px 18px;
+    border-radius: 10px;
+    width: 65%;
+    border: 0;
+    margin: 0 5px;
+}
+.formGroup input::placeholder {
+    color: #80E0DD;
+}   
+.formGroup button {
+    background: #80E0DD;
+    color: #fff;
+    padding: 9px 18px;
+    border-radius: 10px;
+}
+/************************** section invite a freind *********************/
+.inviteFreind .container .row {
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.inviteFreind button {
+    background: #EF7F65;
+    color: #fff;
+    padding: 9px 18px;
+    border-radius: 10px;
+}
+/************************** section pricing table ***********************/
+.pricingTable{
+    padding:60px 0;
+}
+.pricingHeading h2 {
+    margin-bottom: 25px;
+}
+.pricingHeading p {
+    margin: 30px 0;
+    font-size: 18px;
+}
+.personalPlan ,
+.BusinessPlan {
+    padding: 30px 0px;
+    border: 2px solid #0000001a;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.personal {
+    width: 50px;
+    height: 160px;
+    position: absolute;
+    right: 12%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #80e0dd;
+    border-right: 25px solid #80e0dd;
+    color: #fff;
+}
+.personal span ,
+.Business span {
+    transform: rotate(270deg);
+    font-weight: bold;
+}
+.Business {
+    width: 50px;
+    height: 160px;
+    position: absolute;
+    right: 12%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #FEF2EF;
+    border-right: 25px solid #FEF2EF;
+    color: #EF7F65;
+}
+
+.planHeading {
+    padding: 25px 50px;
+    border-bottom: 2px solid #0000001a;
+}
+.planHeading .price {
+    margin: 15px 0 20px 0;
+    position: relative;
+    font-size: 18px;
+}
+.planHeading .price strong {
+    font-size: 40px;
+    line-height: 40px;
+}
+.dollar {
+    position: absolute;
+    right: 100%;
+}
+.pricingBody{
+    padding: 25px 50px; 
+}
+.pricingBody ul {
+    list-style: none;
+    padding: 0;
+}
+.pricingBody ul li{
+    margin:15px 0;
+}
+.personalPlan .pricingBody .register {
+    margin: 25px 0;
+    color: #80e0dd;
+}
+.personalPlan .pricingBody .register button {
+    background: #80e0dd;
+    border: 0;
+    padding: 5px 30px;
+    border-radius: 25px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.BusinessPlan .pricingBody .register {
+    margin: 25px 0;
+    color: #EF7F65;
+}
+.BusinessPlan .pricingBody .register button {
+    background:#EF7F65;
+    border: 0;
+    padding: 5px 30px;
+    border-radius: 25px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+/**************************** start about us section ***************************/
+.aboutUs {
+    padding: 100px 0;
+    background: #EFF8FF;
+    max-height: 665px;
+    position: relative;
+    margin: 70px 0;
+}
+.aboutUSParent {
+    align-items: center;
+   
+}
+.downloadApp {
+    display: flex;
+    justify-content: space-between;
+}
+.downloadApp img{
+    margin:  0 10px;
+}
+.iphone {
+    position: absolute;
+    left: 70%;
+}
+
+.iphone img {
+    height: 550px;
+}
+/******************************** start style subscribe **********************/
+.subscribe{
+    padding: 60px 0;
+}
+.subscribeBody {
+    display: flex;
+    align-items: center;
+}
+.subcribe-txt h2 {
+    margin-bottom: 40px;
+    font-weight: 400;
+    text-shadow: 0 0 2px;
+}
+.subcribe-txt p {
+    font-size: 16px;
+}
+.subscribeBtn {
+    margin-left: 30px;
+}
+.subscribeBtn button {
+    background: #80E0DD;
+    color: #fff;
+    padding: 15px 100px;
+    border-radius: 35px;
+    box-shadow: 5px 0px 10px #80E0DD;
+}
+.footer-ul {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-ul ul , .social_links{
+    list-style: none;
+}
+/********************************** start resposive *******************************/
+@media (max-width: 580px){
+
+    .logoPic {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    .labelFeature {
+        height: 200px;
+        right: 12%;
+        left: auto;
+    }
+    .iphone {
+        display: none;
+    }
+    .subscribeBtn button{
+        padding: 15px 30px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer-ul {
+    flex-direction: column;
+    align-items: center;
+}
+}
